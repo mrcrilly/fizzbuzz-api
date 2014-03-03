@@ -12,10 +12,10 @@ class FizzBuzz(Resource):
         #     return False, 400
 
         if low and not number_re.match(low):
-            return False, 400
+            return low, 400
 
         if high and not number_re.match(high):
-            return False, 400
+            return high, 400
 
         low, high = int(low), high and int(high)
 
