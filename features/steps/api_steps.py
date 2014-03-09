@@ -23,7 +23,7 @@ def step_impl(context, low, high):
 
 @when(u'i check these against the api')
 def step_impl(context):
-    context.result = context.client.get('/{}/{}'.format(context.low, context.high))
+    context.result = context.client.get('/{0}/{1}'.format(context.low, context.high))
 
 @then(u'i will get a list back "{count}" in length')
 def step_impl(context, count):
