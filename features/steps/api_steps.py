@@ -10,7 +10,7 @@ def step_impl(context, number):
 
 @when(u'i check this against the api')
 def step_impl(context):
-    context.result = context.client.get('/{}'.format(context.number))
+    context.result = context.client.get('/{0}'.format(context.number))
 
 @then(u'i will get "{text}" back')
 def step_impl(context, text):
