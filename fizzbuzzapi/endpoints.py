@@ -31,7 +31,7 @@ class FizzBuzz(Resource):
                     if factor.isafactoroffive(low):
                         return "FizzBuzz"
                     else:
-                        return "Fuzz"
+                        return "Fizz"
                 elif factor.isafactoroffive(low):
                     return "Buzz"
                 else:
